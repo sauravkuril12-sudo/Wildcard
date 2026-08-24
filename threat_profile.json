@@ -1,0 +1,36 @@
+{
+  "challenge": "Mastercard Innovation Challenge 2026",
+  "lab": "AI Defense Lab for Payment Security",
+  "fraud_vectors": [
+    {
+      "vector_id": "V1",
+      "name": "Agentic Micro-Siphoning",
+      "description": "Autonomous AI agents executing high-velocity, sub-threshold micro-transactions.",
+      "parameters": {
+        "amount_range": [0.50, 3.00],
+        "velocity_weight": "high",
+        "primary_bypass_mechanism": "Staying under standard rules-based minimum thresholds"
+      }
+    },
+    {
+      "vector_id": "V2",
+      "name": "Behavioral Biometric Mimicry",
+      "description": "GenAI synthesized typing rhythms and touch dynamics mimicking legitimate users.",
+      "parameters": {
+        "amount_range": [50.00, 200.00],
+        "biometric_variance": "unnaturally_low_robotic",
+        "primary_bypass_mechanism": "Fooling device-level behavioral checks"
+      }
+    },
+    {
+      "vector_id": "V3",
+      "name": "Context-Aware P2P Social Engineering",
+      "description": "Deepfake-driven coercion forcing real users to voluntarily authorize high-value transfers.",
+      "parameters": {
+        "amount_range": [500.00, 3000.00],
+        "device_trust_score": 1.0,
+        "primary_bypass_mechanism": "Bypassing fraud engines via genuine user session authentication"
+      }
+    }
+  ]
+}
