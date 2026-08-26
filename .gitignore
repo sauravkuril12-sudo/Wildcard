@@ -1,0 +1,5 @@
+.env
+__pycache__/
+.venv/
+apps/streamlit/data/*.csv
+apps/streamlit/data/*.db
