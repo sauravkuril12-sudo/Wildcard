@@ -3,6 +3,10 @@
 > **Closed-Loop GenAI Payment Fraud Defense Engine**  
 > *"Don’t just detect fraud. Learn from the fraud that beats you."*
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://wildcard-mscg.streamlit.app/)
+
+🔗 **Live Interactive Demo:** [https://wildcard-mscg.streamlit.app/](https://wildcard-mscg.streamlit.app/)
+
 The **Mastercard AI Defense Lab** is an interactive payment security system designed to detect, explain, and mitigate emerging GenAI-driven payment fraud vectors. By combining synthetic adversarial telemetry, structural firewall validation, explainable machine learning classification, and an adaptive closed-loop retraining pipeline, the platform bridges the gap between raw ML predictions and actionable enterprise fraud defense.
 
 ---
@@ -79,7 +83,8 @@ Wildcard/
 ├── README.md                          # Main repository documentation
 └── .gitignore
 
-🛠️ Installation & Setup
+🛠️ Local Installation & Setup
+If you prefer to run the project locally instead of accessing the live hosted version:
 1. Clone the Repository
 git clone [https://github.com/sauravkuril12-sudo/Wildcard.git](https://github.com/sauravkuril12-sudo/Wildcard.git)
 cd Wildcard
@@ -96,15 +101,14 @@ source .venv/bin/activate
 3. Install Dependencies
 pip install -r apps/streamlit/requirements.txt
 
-▶️ Running the Application
-Always run the application using streamlit run from the repository root:
+▶️ Running the Application Locally
+Always launch the application from the repository root using streamlit run:
 streamlit run apps/streamlit/app.py
 
-For Windows environments specifying port and host:
+For Windows environments specifying port and host explicitly:
 .\.venv\Scripts\python.exe -m streamlit run apps/streamlit/app.py --server.address 0.0.0.0 --server.port 8501
 
-Open your browser and navigate to:
-http://localhost:8501/
+Access the local server at http://localhost:8501/.
 📦 Tech Stack
  * Frontend / UI: Streamlit
  * Machine Learning: XGBoost, scikit-learn
