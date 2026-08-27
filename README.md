@@ -13,30 +13,26 @@ The **Mastercard AI Defense Lab** is an interactive payment security system desi
 
 ## 📌 Architecture Overview
 
+A["<b>1. Synthetic Payment Telemetry</b><br/>Amount • Device Score • Velocity • Biometric Variance"]
+    B["<b>2. Fidelity Firewall</b><br/>Structural Integrity & Data Sanity Check"]
+    C["<b>3. Defender ML Engine</b><br/>XGBoost (Gen-1 Baseline vs. Gen-2 Hardened)"]
+    D["<b>4. Explainable AI (XAI) Telemetry</b><br/>Attack Vector Matching (V1 / V2 / V3)"]
+    E["<b>5. Enterprise Decision Engine</b><br/>ALLOW • STEP-UP • REVIEW • BLOCK"]
+    F["<b>6. Adversarial Learning Loop</b><br/>Captures False Negatives & Mutates Attacks"]
 
-[ Synthetic Payment Telemetry ]
-(Amount, Device Score, Velocity, Variance)
-│
-▼
-[ Fidelity Firewall ]
-(Structural Integrity & Sanity Check)
-│
-▼
-[ Defender ML Engine ]
-(Gen-1 Baseline vs. Gen-2 Hardened)
-│
-▼
-[ Explainable AI (XAI) Telemetry ]
-(Attack Vector Matching: V1 / V2 / V3)
-│
-▼
-[ Enterprise Decision Engine ]
-(ALLOW ➔ STEP-UP ➔ REVIEW ➔ BLOCK)
-│
-▼
-[ Adversarial Learning Loop ]
-(Retrain on Missed Fraud / False Negatives)
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -.->|"Adaptive Model Retraining"| C
 
+    style A fill:#1e1e24,stroke:#ff5f00,stroke-width:2px,color:#ffffff
+    style B fill:#1e1e24,stroke:#eb001b,stroke-width:2px,color:#ffffff
+    style C fill:#1e1e24,stroke:#0070f3,stroke-width:2px,color:#ffffff
+    style D fill:#1e1e24,stroke:#7928ca,stroke-width:2px,color:#ffffff
+    style E fill:#1e1e24,stroke:#00dfd8,stroke-width:2px,color:#ffffff
+    style F fill:#1e1e24,stroke:#f5a623,stroke-width:2px,color:#ffffff
 ---
 
 ## 🚀 Key Features
